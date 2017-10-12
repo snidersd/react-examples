@@ -15,6 +15,7 @@ class App extends Component {
         <h1 className="App-title">React Examples</h1>  
           <ul>
             <li><a href="./lists">Lists</a></li>
+            <li><a href="./test">Test updates</a></li>
           </ul>
 
         {/* Component end */}
