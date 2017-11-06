@@ -45,10 +45,16 @@ p, figure {
 sup, sub {
    line-height: 0;
 }
-table, th, td {
-   border: 1px solid black;
-   border-collapse: collapse;
- }
 table {
    width: 75%;
 }
+tfoot {
+  color:red;
+  }
+thead {
+  color:green;
+  }
+table,th,td {
+  border:1px solid black;
+  }
+
