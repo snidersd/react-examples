@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 import './App.css'
 import chart from './chart.png';
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Route,
     Link
 } from 'react-router-dom'
@@ -175,8 +175,16 @@ const routes = [
                                 </div>
                                 <div>
                                     <label>Birth Date &nbsp;
-                        <input id="dob" name="dob" type="date" required></input>
-                                    </label>
+                        <label>Month &nbsp;
+                                <Range1 className='number' onChange={this.handleOnChange} type='number'  min={1} max={12} />
+                            </label>
+                            <label>Day &nbsp;
+                                <Range1 className='number' onChange={this.handleOnChange} type='number'  min={1} max={31}  />
+                            </label>
+                            <label>Year &nbsp;
+                                <Range1 className='number' onChange={this.handleOnChange} type='number'  min={1900} max={2017}  />
+                            </label>
+                        </label>
                                 </div>
                                 <div>
                                     <label>Email &nbsp;
@@ -195,7 +203,7 @@ const routes = [
                                 </div>
                                 <div>
                                     <label>Shoe Size &nbsp;
-                        <input id="shoes" name="shoes" type="number" min="5" max="18" step="0.5" value="9"></input>
+                                        <Range1 className='number' onChange={this.handleOnChange} type='number' value={9} min={5} max={18} step={0.5} />
                                     </label>
                                 </div>
                                 <div>
