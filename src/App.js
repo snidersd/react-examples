@@ -85,7 +85,7 @@ const routes = [
             <ul>
                             <li>The <a href="https://github.com/nfl/react-helmet"> react-helmet</a> package to manage the page title.</li>
                             <li>The <a href="https://www.npmjs.com/package/react-range"> react-range</a> package to create the form slider.</li>
-                            <li><a href="https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page">W3C WAI ARIA Landmarks </a>to idenitify regions to a page.</li>
+                            <li><a href="https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page">W3C WAI ARIA Landmarks </a>to identify regions to a page.</li>
                         </ul>
                         <hr className="hr" />
                         <h2>Other Available React ARIA Components</h2>
