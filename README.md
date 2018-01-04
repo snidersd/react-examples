@@ -1,7 +1,7 @@
 # React Examples
-These React examples are a single page React application deployed on GitHub. It was created using [Create React App] (https://github.com/facebookincubator/create-react-app). 
+These React examples are a single page React application deployed on GitHub. It was created using [Create React App](https://github.com/facebookincubator/create-react-app). 
 
-To see the working demo, go to React Examples (https://snidersd.github.io/react-examples/#/).
+To see the working demo, go to [React Examples](https://snidersd.github.io/react-examples/#/).
 
 Select the link in the left navigation pane of the demo to view the example for each element. Accessibility test results are also included at the bottom of each example.
 
