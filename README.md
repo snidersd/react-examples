@@ -12,7 +12,7 @@ The [react-range] (https://www.npmjs.com/package/react-range) package to create 
 
 ## Installation Instructions
 Follow these steps to install the React Examples application:
-- Clone or download the Va11yS repository. 
+- Clone or download the react-example repository. 
     - If you download the zip file extract it before proceeding.
 - From the command-line navigate to the react-examples directory.
 - Type: npm install
