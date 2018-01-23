@@ -1,5 +1,5 @@
 # React Examples
-These React examples are a single page React application deployed on GitHub. It was created using [Create React App](https://github.com/facebookincubator/create-react-app). 
+These React examples are a single page React application deployed on GitHub. It was created using [Create React App](https://github.com/facebook/create-react-app). 
 
 To see the working demo, go to [React Examples](https://snidersd.github.io/react-examples/#/).
 
@@ -13,8 +13,8 @@ The [react-range] (https://www.npmjs.com/package/react-range) package to create 
 ## Installation Instructions
 Follow these steps to install the React Examples application:
 - Clone or download the react-examples repository. 
-    - If you download the zip file extract it before proceeding.
-- From the command-line navigate to the react-examples directory.
+    - If you download the zip file extract it before proceeding. 
+- From the command-line navigate to the react-examples (clone) or react-examples-master (unzip) directory.
 - Type: npm install
 - Type: npm start
 - The application opens in your default browser to http://localhost:3000/#/
