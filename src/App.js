@@ -70,13 +70,14 @@ const routes = [
         sidebar: () => <div></div>,
         main: () =>
             <main role="main">
+                <banner><a href="https://ibma.github.io/Va11yS/">Back to Va11yS</a></banner>
                 <div id="Home">
                     <Home />
                     <h1>React Examples</h1>
                     {/*Component start */}
                     <p>
-                        These React examples are a single page application that is deployed on GitHub. It was created using
-            <a href="https://github.com/facebookincubator/create-react-app"> Create React App</a>.
+                        These React examples are a single page application that is deployed on GitHub. It was created using 
+            <a href="https://github.com/facebook/create-react-app"> Create React App</a>.
             Select the link in the left navigation pane to view the example for each element. Accessibility test results are
             also included at the bottom of each example.
         </p>
@@ -96,6 +97,7 @@ const routes = [
                         </ul>
                         <h2>Additional Resources</h2>
                         <ul>
+                            <li><a href="https://github.com/snidersd/react-examples">React Examples GitHub repository</a></li>
                             <li><a href="https://reactjs.org/docs/accessibility.html">React Accessibility</a></li>
                             <li><a href="https://reactjs.org/tutorial/tutorial.html">Tutuorial: Intro to React</a></li>
                             <li><a href="https://www.w3.org/WAI/tutorials/">W3C Web Accessibility Tutorials</a></li>
