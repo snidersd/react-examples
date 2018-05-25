@@ -697,7 +697,7 @@ const routes = [
                     <h3>Tested on:</h3>
                     <div>
                         <ul>
-                            <li>Windows 7, FGoogle Chrome Version 66.0.3359.139 (Official Build) (64-bit) and FireFox Quantum 60.0.1 (64 bit), and JAWS 2018 (build 1712.19 ILM).
+                            <li>Windows 7, Google Chrome Version 66.0.3359.139 (Official Build) (64-bit) and FireFox Quantum 60.0.1 (64 bit), and JAWS 2018 (build 1712.19 ILM).
                         <ul>
                                     <li>Results - JAWS announces: all the information (links, content, selections, landmarks....etc.)</li>
                                 </ul>
