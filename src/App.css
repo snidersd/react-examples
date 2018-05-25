@@ -48,13 +48,9 @@ sup, sub {
 table {
    width: 75%;
 }
-tfoot {
-  color:red;
-  }
 thead {
   color:green;
   }
 table,th,td {
   border:1px solid black;
   }
-
