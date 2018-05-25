@@ -5,17 +5,15 @@
   "homepage": "https://snidersd.github.io/react-examples",
   "dependencies": {
     "@mapbox/react-control-range": "^0.3.1",
-    "moment": "^2.19.1",
-    "moment-timezone": "^0.5.14",
     "react": "^16.0.0",
     "react-datepicker": "^0.60.2",
     "react-document-title": "^2.0.3",
-    "react-dom": "^16.0.0",
+    "react-dom": "^16.3.2",
     "react-helmet": "^5.2.0",
-    "react-moment": "^0.6.7",
     "react-range": "0.0.7",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.14"
+    "react-scripts": "1.0.14",
+    "react-select": "^2.0.0-beta.2"
   },
   "scripts": {
     "predeploy": "npm run build",

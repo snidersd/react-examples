@@ -8,7 +8,9 @@ import {
     Link
 } from 'react-router-dom'
 
-var Range1 = require('react-range');
+import Range1 from "react-range";
+
+import Select1 from 'react-select'
 
 const Home = _ =>
     <div>
@@ -58,7 +60,12 @@ const Tables = _ =>
             <title>Tables</title>
         </Helmet>
     </div>
-
+const Select = _ =>
+<div>
+    <Helmet>
+        <title>Select</title>
+    </Helmet>
+</div>
 // Each logical "route" has two components, one for
 // the sidebar and one for the main area. We want to
 // render both of them in different places when the
@@ -86,6 +93,7 @@ const routes = [
             <ul>
                             <li>The <a href="https://github.com/nfl/react-helmet"> react-helmet</a> package to manage the page title.</li>
                             <li>The <a href="https://www.npmjs.com/package/react-range"> react-range</a> package to create the form slider.</li>
+                            <li>The <a href="https://www.npmjs.com/package/react-select"> react-select</a> package to create the seclect example.</li>
                             <li><a href="https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page">W3C WAI ARIA Landmarks </a>to identify regions to a page.</li>
                         </ul>
                         <hr className="hr" />
@@ -100,6 +108,7 @@ const routes = [
                             <li><a href="https://github.com/snidersd/react-examples">React Examples GitHub repository</a></li>
                             <li><a href="https://reactjs.org/docs/accessibility.html">React Accessibility</a></li>
                             <li><a href="https://reactjs.org/tutorial/tutorial.html">Tutuorial: Intro to React</a></li>
+                            <li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/">WAI-ARIA Authoring Practices 1.1</a></li>
                             <li><a href="https://www.w3.org/WAI/tutorials/">W3C Web Accessibility Tutorials</a></li>
                         </ul>
                     </p>
@@ -131,7 +140,7 @@ const routes = [
                     <h3>Tested on:</h3>
                     <div>
                         <ul>
-                            <li>Mac OS Sierra 10.12.6, Safari browser and VoiceOver are based on the Mac OS version.
+                            <li>Mac OS Sierra 10.13.4, Chrome browser and VoiceOver are based on the Mac OS version.
                         <ul>
                                     <li>Results - VoiceOver announces: </li>
                                     <ul>
@@ -289,7 +298,7 @@ const routes = [
                     <h3>Tested on:</h3>
                     <div>
                         <ul>
-                            <li>Mac OS Sierra 10.12.6, Safari browser and VoiceOver are based on the Mac OS version.
+                            <li>Mac OS Sierra 10.13.4, Chrome browser and VoiceOver are based on the Mac OS version.
                         <ul>
                                     <li>Results - VoiceOver announces: </li>
                                     <ul>
@@ -403,7 +412,7 @@ const routes = [
                     <h3>Tested on:</h3>
                     <div>
                         <ul>
-                            <li>Mac OS Sierra 10.12.6, Safari browser and VoiceOver are based on the Mac OS version.
+                            <li>Mac OS Sierra 10.13.4, Chrome browser and VoiceOver are based on the Mac OS version.
                     <ul>
                                     <li>Result - VoiceOver announces:
                           <ul>
@@ -465,7 +474,7 @@ const routes = [
                     <h3>Tested on:</h3>
                     <div>
                         <ul>
-                            <li>Mac OS Sierra 10.12.6, Safari browser and VoiceOver are based on the Mac OS version.
+                            <li>Mac OS Sierra 10.13.4, Chrome browser and VoiceOver are based on the Mac OS version.
                         <ul>
                                     <li>Results - VoiceOver announces: </li>
                                     <ul>
@@ -495,7 +504,7 @@ const routes = [
                     <div>
                         <h3>The @mapbox/react-control-range package was installed to create this slider.</h3>
                         <p>The range is max = 100, min = 0, step = 10</p>
-                        <Range1 className='slider' onChange={this.handleOnChange} type='range' value={20} min={0} max={100} step={10} />
+                        <Range1 aria-label='slider' className='slider' onChange={this.handleOnChange} type='range' value={20} min={0} max={100} step={10} />
 
                     </div>
                     {/* Component end */}
@@ -505,7 +514,7 @@ const routes = [
                     <h3>Tested on:</h3>
                     <div>
                         <ul>
-                            <li>Mac OS Sierra 10.12.6, Safari browser and VoiceOver are based on the Mac OS version.
+                            <li>Mac OS Sierra 10.13.4, Chrome browser and VoiceOver are based on the Mac OS version.
                         <ul>
                                     <li>Results - VoiceOver announces: </li>
                                     <ul>
@@ -533,29 +542,29 @@ const routes = [
                     <Sections />
                     <h2 className="App-title">Sections</h2>
                     {/* Component start */}
-                    <section>
-                        <h1>Sections used in an Outline</h1>
-                        <section>
-                            <h2>Introduction</h2>
+                    <section aria-labelledby='out'>
+                        <h1 id='out'>Sections used in an Outline</h1>
+                        <section aria-labelledby='intro'>
+                            <h2 id='intro'>Introduction</h2>
                             <p>This is the introduction to the document.</p>
                         </section>
-                        <section>
-                            <h2>First Topic</h2>
+                        <section aria-labelledby='first'>
+                            <h2 id='first'>First Topic</h2>
                             <p>This is the content of the First Topic.</p>
-                            <section>
-                                <h3>Sub-section of the First Topic</h3>
+                            <section aria-labelledby='sub-first'>
+                                <h3 id='sub-first'>Sub-section of the First Topic</h3>
                                 <p>This is the content of the sub-section related to the first topic.</p>
                             </section>
                         </section>
-                        <section>
-                            <h2>Second Topic</h2>
+                        <section aria-labelledby='second'>
+                            <h2 id='second'>Second Topic</h2>
                             <p>This is the content of the second topic.</p>
-                            <section>
-                                <h3>Sub-section of the Second Topic</h3>
+                            <section aria-labelledby='sub-sec'>
+                                <h3 id='sub-sec'>Sub-section of the Second Topic</h3>
                                 <p>This is the content of the sub-section related to the Second topic.</p>
                             </section>
                         </section>
-                        <aside>
+                        <aside role='note' aria-label='note'>
                             <p>Aside element used to provide information or advertising relevant to the topic.</p>
                         </aside>
                     </section>
@@ -569,7 +578,7 @@ const routes = [
                     <h3>Tested on:</h3>
                     <div>
                         <ul>
-                            <li>Mac OS Sierra 10.12.6, Safari browser and VoiceOver are based on the Mac OS version.
+                            <li>Mac OS Sierra 10.13.4, Chrome browser and VoiceOver are based on the Mac OS version.
                         <ul>
                                     <li>Results - VoiceOver announces: </li>
                                     <ul>
@@ -639,7 +648,7 @@ const routes = [
                     <h3>Tested on:</h3>
                     <div>
                         <ul>
-                            <li>Mac OS Sierra 10.12.6, Safari browser and VoiceOver are based on the Mac OS version.
+                            <li>Mac OS Sierra 10.13.4, Chrome browser and VoiceOver are based on the Mac OS version.
                         <ul>
                                     <li>Results - VoiceOver announces: </li>
                                     <ul>
@@ -652,6 +661,64 @@ const routes = [
                                         <li>End of table. You are currently on a table.</li>
                                         <li>End of main. To exit this area, press Control - Option - Up Arrow.</li>
                                     </ul>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    },
+    {
+        path: '/select',
+        sidebar: () => <div></div>,
+        main: () => <div id="select">
+            <div className="App">
+                <main role="main">
+                <Select />
+                    <h2 className="App-title">Select</h2>
+                    {/* Component start */}
+                    <form>
+                            <Select1 
+                              aria-label='city'
+                              options={[
+                                { value: 'Miami', label: 'Miami'},
+                                { value: 'Los Angeles', label: 'Los Angeles' },
+                                { value: 'New York', label: 'New York' }
+                            ]}
+                            />
+                        <br />
+                        <input type="submit" value="Submit" />
+                    </form>
+                    {/* Component end */}
+                </main>
+                <footer role="contentinfo">
+                    <hr className="hr" />
+                    <h3>Tested on:</h3>
+                    <div>
+                        <ul>
+                            <li>Windows 7, FGoogle Chrome Version 66.0.3359.139 (Official Build) (64-bit) and FireFox Quantum 60.0.1 (64 bit), and JAWS 2018 (build 1712.19 ILM).
+                        <ul>
+                                    <li>Results - JAWS announces: all the information (links, content, selections, landmarks....etc.)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>Mac OS Sierra 10.13.4, Chrome browser and VoiceOver are based on the Mac OS version.
+                        <ul>
+                                    <li>Results - VoiceOver announces: </li>
+                                    <ul>
+                                        <li>You are currently on the main inside web content.</li>
+                                        <li>Heading level 2. Select. You are currently on a heading level 2.</li>
+                                        <li>Three results available. Your are currently on a text element.</li>
+                                        <li>Select a city. You are currently on a text element.</li>
+                                        <li>Combobox. You are currently on a combobox. Type text, or to display a list of choices, press Control-Option-Space.</li>
+                                        <li>Confirm city combobox.Note: VoiceOver does not announce list items. VoiceOver does announce the letters as typed and then the city.</li>
+                                        <li>Submit button. You are currently on a button. To click this button, press Control-Option-Space.</li>
+                                        <li>End of Main. You are currently on a main inside web content. To exit this web area, press Control-Option-Shift Up Arrow.</li>
+                                    </ul>
+                                    <li>Note: Testing with the Dynamic Assessment Plug will generate a violation. The violation is a known defect and has been ignored.</li>
+                                    <li>See <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#combobox">WAI-ARIA Authoring Practices 1.1 for additional Combo Box guidance.</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -680,6 +747,7 @@ const SidebarExample = () => (
                         <li><Link to="/range">Range</Link></li>
                         <li><Link to="/sections">Sections</Link></li>
                         <li><Link to="/tables">Tables</Link></li>
+                        <li><Link to="/select">Select</Link></li>
                     </ul>
                 </nav>
                 {routes.map((route, index) => (
